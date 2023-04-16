@@ -1,0 +1,324 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+    <style name="PrimaryButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selector_primary_button</item>
+        <item name="android:textColor">@drawable/selector_primary_button_text</item>
+    </style>
+    <style name="UnderlineText">
+        <item name="android:background">@drawable/selector_underline</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@drawable/selector_underline_text</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="AppTheme.RoundedCornerMaterialButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/rounded_shape</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+    <style name="AppTheme.RoundedCornerMaterialButtonDark" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/rounded_shape_dark</item>
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <style name="AppTheme.RoundedCornerDarkMaterialButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/dark_rounded_shape</item>
+        <item name="colorButtonNormal">@color/white</item>
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+    <style name="fonts">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="ToolBarStyle" parent="ToolBarStyle.Base" />
+    <style name="ToolBarStyle.Base" parent="AppTheme">
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+
+    </style>
+
+    <style name="ToolBarStyle.Event" parent="ToolBarStyle">
+        <item name="titleTextAppearance">@style/TextAppearance.Widget.Event.Toolbar.Title</item>
+    </style>
+    <style name="TextAppearance.Widget.Event.Toolbar.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <!--Any text styling can be done here-->
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="homegridimage">
+        <item name="android:gravity"></item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+    <style name="homegridtext">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">#424242</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="homegridcard">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:elevation" tools:targetApi="lollipop">5dp</item>
+        <item name="android:layout_weight">5</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="headingfonts">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="headingfonts_Med">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+    <style name="txt_black_micro">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">10dp</item>
+        <!--<item name="android:textSize">@android:style/TextAppearance.Small</item>-->
+    </style>
+
+    <style name="Theme.App.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/grey_600</item>
+        <item name="colorControlActivated">#e4e4e4</item>
+        <item name="colorControlHighlight">@color/grey_600</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="TextAppearance.Second" parent="@android:style/TextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/secondary_text</item>
+    </style>
+    <style name="TextAppearance.Second.Light" parent="@android:style/TextAppearance">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/secondary_light</item>
+    </style>
+    <style name="TextAppearance.Title.Light" parent="@android:style/TextAppearance">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/secondary_light</item>
+    </style>
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+    <!-- MaterialSearchBarLightTheme-->
+    <style name="MaterialSearchBarLight" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="mt_searchBarColor">@color/searchBarPrimaryColor</item>
+        <item name="mt_dividerColor">@color/searchBarDividerColor</item>
+        <item name="mt_navIconTint">@color/searchBarNavIconTintColor</item>
+        <item name="mt_searchIconTint">@color/searchBarSearchIconTintColor</item>
+        <item name="mt_clearIconTint">@color/searchBarClearIconTintColor</item>
+        <item name="mt_menuIconTint">@color/searchBarMenuIconTintColor</item>
+        <item name="mt_backIconTint">@color/searchBarBackIconTintColor</item>
+        <item name="mt_textCursorTint">@color/searchBarCursorColor</item>
+        <item name="mt_textColor">@color/searchBarTextColor</item>
+        <item name="mt_hintColor">@color/searchBarHintColor</item>
+        <item name="mt_placeholderColor">@color/searchBarPlaceholderColor</item>
+        <item name="mt_highlightedTextColor">@color/searchBarTextHighlightColor</item>
+    </style>
+
+    <!-- MaterialSearchBarDarkTheme-->
+    <style name="MaterialSearchBarDark" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="mt_searchBarColor">@color/searchBarPrimaryColorDark</item>
+        <item name="mt_dividerColor">@color/searchBarDividerColorDark</item>
+        <item name="mt_navIconTint">@color/searchBarNavIconTintColorDark</item>
+        <item name="mt_searchIconTint">@color/searchBarSearchIconTintColorDark</item>
+        <item name="mt_clearIconTint">@color/searchBarClearIconTintColorDark</item>
+        <item name="mt_menuIconTint">@color/searchBarMenuIconTintColorDark</item>
+        <item name="mt_backIconTint">@color/searchBarBackIconTintColorDark</item>
+        <item name="mt_textCursorTint">@color/colorAccent</item>
+        <item name="mt_textColor">@color/searchBarTextColorDark</item>
+        <item name="mt_hintColor">@color/searchBarHintColorDark</item>
+        <item name="mt_placeholderColor">@color/searchBarPlaceholderColorDark</item>
+        <item name="mt_highlightedTextColor">@color/searchBarTextHighlightColorDark</item>
+    </style>
+    <style name="SearchResult.Title"  parent="@android:style/TextAppearance.Large.Inverse">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="txt_white_micro">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+    <style name="txt_white_small">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="txt_gray_small">
+        <item name="android:textColor">@color/grey_600</item>
+        <item name="android:textColorHint">@color/grey_600</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="txt_color_primary_big">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="txt_grey_big">
+        <item name="android:textColor">@color/grey_600</item>
+        <item name="android:textColorHint">@color/grey_600</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="txt_black_small">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+        <!--<item name="android:textSize">@android:style/TextAppearance.Small</item>-->
+    </style>
+    <style name="txt_black_big">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <!--<item name="android:textSize">@android:style/TextAppearance.Small</item>-->
+    </style>
+    <style name="txt_black_medium">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <!--<item name="android:textSize">@android:style/TextAppearance.Small</item>-->
+    </style>
+    <style name="txt_color_primary_medium">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="txt_color_grey_medium">
+        <item name="android:textColor">@color/grey_600</item>
+        <item name="android:textColorHint">@color/grey_600</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="txt_gray_medium">
+        <item name="android:textColor">@color/grey_600</item>
+        <item name="android:textColorHint">@color/grey_600</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="txt_gray_big">
+        <item name="android:textColor">@color/grey_600</item>
+        <item name="android:textColorHint">@color/grey_600</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="txt_gray_micro">
+        <item name="android:textColor">@color/grey_600</item>
+        <item name="android:textColorHint">@color/grey_600</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+    <style name="txt_white_medium">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="txt_white_big">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="txt_color_primary_micro">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="txt_color_primary_small">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Widget.MaterialRatingBar.RatingBar" parent="android:Widget.RatingBar">
+        <!--
+        Disabled for correct behavior on Android 4.x, see
+        https://github.com/android/platform_frameworks_base/commit/911743652b597057a1bd7ef8a921e9ff8dce0f4a#diff-149f45c5ff2d3185bb79688ba17bc432L536
+        <item name="android:progressDrawable">@null</item>
+        -->
+        <item name="android:indeterminateDrawable">@null</item>
+        <item name="android:minHeight">15dp</item>
+        <item name="android:maxHeight">15dp</item>
+    </style>
+
+    <style name="Widget.MaterialRatingBar.FilterRatingBar" parent="android:Widget.RatingBar">
+        <!--
+        Disabled for correct behavior on Android 4.x, see
+        https://github.com/android/platform_frameworks_base/commit/911743652b597057a1bd7ef8a921e9ff8dce0f4a#diff-149f45c5ff2d3185bb79688ba17bc432L536
+        <item name="android:progressDrawable">@null</item>
+        -->
+        <item name="android:indeterminateDrawable">@null</item>
+        <item name="android:minHeight">25dp</item>
+        <item name="android:maxHeight">25dp</item>
+    </style>
+
+    <style name="TextLabegray" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/grey_600</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/grey_600</item>
+        <item name="colorControlNormal">@color/grey_600</item>
+        <item name="colorControlActivated">@color/grey_600</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/grey_600</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/grey_600</item>
+        <item name="colorControlNormal">@color/grey_600</item>
+        <item name="colorControlActivated">@color/grey_600</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="TextLabel1" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/grey_600</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/grey_600</item>
+        <item name="colorControlNormal">@color/grey_600</item>
+        <item name="colorControlActivated">@color/grey_600</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+    <style name="AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+
+</resources>

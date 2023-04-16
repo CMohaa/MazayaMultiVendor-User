@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="examples">
+        <item>@string/different_fields</item>
+        <item>@string/fast_turnaround</item>
+        <item>@string/prices</item>
+        <item>@string/wide_range_produts</item>
+        <item>@string/unique_products</item>
+        <item>@string/stylish_items</item>
+    </string-array>
+
+    <string-array name="examples_return">
+        <item>@string/free_return</item>
+        <item>@string/cash_on_delivery</item>
+
+    </string-array>
+
+    <string-array name="cities">
+        <item>ألقاهرة</item>
+        <item>الجيزة</item>
+        <item>القليوبية</item>
+        <item>الاسكندرية</item>
+        <item>الدقهلية</item>
+        <item>البحر الاحمر</item>
+        <item>البحيرة</item>
+        <item>الفيوم</item>
+        <item>الغربية</item>
+        <item>الإسماعيلية</item>
+        <item>المنوفية</item>
+        <item>المنيا</item>
+        <item>الوادى الجديد</item>
+        <item>السويس</item>
+        <item>اسوان</item>
+        <item>اسيوط</item>
+        <item>بنى سويف</item>
+        <item>بورسعيد</item>
+        <item>دمياط</item>
+        <item>الشرقية</item>
+        <item>جنوب سينا</item>
+        <item>كفر الشيخ</item>
+        <item>مطروح</item>
+        <item>الاقصر</item>
+        <item>قنا</item>
+        <item>شمال سينا</item>
+        <item>سوهاج</item>
+    </string-array>
+
+
+
+
+</resources>

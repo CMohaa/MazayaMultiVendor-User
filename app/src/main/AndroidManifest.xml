@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mohaa.dokan">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name="com.mohaa.dokan.app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.mohaa.dokan.Auth.AuthActivity"></activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+
+        <activity android:name="com.mohaa.dokan.Auth.RegisterActivity" />
+        <activity android:name="com.mohaa.dokan.Auth.LoginActivity" />
+        <activity android:name="com.mohaa.dokan.HomeActivity" />
+        <activity android:name="com.mohaa.dokan.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mohaa.dokan.Controllers.activities_popup.CommentsActivity" />
+        <activity android:name="com.mohaa.dokan.Controllers.activities_popup.ImagePopupDetailsActivity" />
+        <activity android:name="com.mohaa.dokan.Controllers.activities_popup.SearchActivity" />
+        <activity android:name="com.mohaa.dokan.Controllers.activities_products.IndividualProductActivity" />
+        <activity android:name="com.mohaa.dokan.Controllers.activities_products.ProductsActivity" />
+        <activity android:name="com.mohaa.dokan.Controllers.activities_traders.TraderActivity" />
+        <activity android:name="com.mohaa.dokan.Controllers.activities_popup.CartReadyActivity" />
+        <activity android:name="com.mohaa.dokan.Controllers.activities_popup.AddAddressActivity" />
+        <activity android:name="com.mohaa.dokan.Controllers.activities_orders.OrderFailureActivity" />
+        <activity android:name="com.mohaa.dokan.Controllers.activities_orders.OrderSuccessActivity" />
+        <activity android:name="com.mohaa.dokan.Controllers.activities_orders.OrderDetailsActivity" />
+        <activity android:name="com.mohaa.dokan.Controllers.activities_popup.AddressActivity" />
+        <activity android:name="com.mohaa.dokan.Controllers.activities_orders.TrackActivity" />
+        <activity
+            android:name="com.mohaa.dokan.Controllers.activities_popup.ImageViewerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity android:name="com.mohaa.dokan.Controllers.activities_popup.ProductQuickDetailActivity" />
+        <activity android:name="com.mohaa.dokan.Controllers.activities_popup.MyAddressActivity" />
+        <activity android:name="com.mohaa.dokan.Controllers.activities_popup.AddWPAddressActivity" />
+    </application>
+
+</manifest>

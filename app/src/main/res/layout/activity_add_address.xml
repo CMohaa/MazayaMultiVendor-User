@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/activity_item_details"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Controllers.activities_popup.AddAddressActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbarwrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_address" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView android:id="@+id/scrollbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.5"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_marginTop="10dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="vertical"
+
+
+                >
+
+                <LinearLayout
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryDark">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dp"
+                        android:theme="@style/TextLabegray">
+
+                        <com.mohaa.dokan.Utils.EditTextRegular
+                            android:id="@+id/customer_phone"
+                            style="@style/txt_white_medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="12dp"
+                            android:gravity="start"
+                            android:hint="@string/mobile_number"
+                            android:inputType="number"
+                            android:paddingBottom="8dp"
+                            android:singleLine="true"
+                            android:textColorHint="@color/colorAccent"
+                            android:textColor="@color/colorAccent"
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale"
+                            app:drawableStartCompat="@drawable/ic_phone_black" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/goverment"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorAccent"/>
+
+                    <AutoCompleteTextView
+                        android:layout_weight="1"
+                        android:id="@+id/goverment_ip"
+                        android:enabled="false"
+                        android:layout_width="0dp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_height= "wrap_content"/>
+                    <Spinner
+                        android:textColor="@color/colorAccent"
+                        android:backgroundTint="@color/colorAccent"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_width="30dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/spinner_goverment_ip"
+                        android:spinnerMode="dropdown"
+                        />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dp"
+                        android:theme="@style/TextLabegray">
+
+                        <com.mohaa.dokan.Utils.EditTextRegular
+                            android:id="@+id/customer_address"
+                            style="@style/txt_gray_medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="12dp"
+                            android:gravity="start"
+                            android:hint="@string/address"
+                            android:textColor="@color/colorAccent"
+                            android:textColorHint="@color/colorAccent"
+                            android:paddingBottom="8dp"
+                            android:singleLine="true"
+                            android:textAlignment="viewStart"
+                            app:drawableStartCompat="@drawable/ic_home_black" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

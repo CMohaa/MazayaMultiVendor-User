@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white"
+    tools:context=".Auth.RegisterActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/appbarLayout"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_simple" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:layout_below="@+id/appbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideInset">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:gravity="center"
+            android:theme="@style/AppTheme"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/logo"/>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:theme="@style/TextLabegray">
+
+                <com.mohaa.dokan.Utils.EditTextRegular
+                    android:id="@+id/etUsername"
+                    style="@style/txt_gray_medium"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="12dp"
+                    android:gravity="start"
+                    android:hint="@string/user_name"
+                    android:inputType="textPersonName"
+                    android:paddingBottom="8dp"
+                    android:singleLine="true"
+                    android:textAlignment="viewStart"
+                    android:textDirection="locale"
+                    android:theme="@style/Theme.App.Base"
+                    app:drawableStartCompat="@drawable/ic_user" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp"
+                android:theme="@style/TextLabegray">
+
+                <com.mohaa.dokan.Utils.EditTextRegular
+                    android:id="@+id/etEmail"
+                    style="@style/txt_gray_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="12dp"
+                    android:gravity="start"
+                    android:hint="@string/enter_email"
+                    android:inputType="textEmailAddress"
+                    android:paddingBottom="8dp"
+                    android:singleLine="true"
+                    android:textAlignment="viewStart"
+                    android:textDirection="locale"
+                    app:drawableStartCompat="@drawable/ic_mail" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp"
+                android:theme="@style/TextLabegray">
+
+                <com.mohaa.dokan.Utils.EditTextRegular
+                    android:id="@+id/etPass"
+                    style="@style/txt_gray_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:gravity="start"
+                    android:hint="@string/enter_password"
+                    android:inputType="textPassword"
+                    android:paddingBottom="10dp"
+                    android:singleLine="true"
+                    android:textAlignment="viewStart"
+                    android:textDirection="locale"
+                    app:drawableStartCompat="@drawable/ic_password" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp"
+                android:theme="@style/TextLabegray">
+
+                <com.mohaa.dokan.Utils.EditTextRegular
+                    android:id="@+id/etConfirmPass"
+                    style="@style/txt_gray_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="12dp"
+                    android:gravity="start"
+                    android:hint="@string/enter_confirm_password"
+                    android:inputType="textPassword"
+                    android:paddingBottom="8dp"
+                    android:singleLine="true"
+                    android:textAlignment="viewStart"
+                    android:textDirection="locale"
+                    app:drawableStartCompat="@drawable/ic_password" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.mohaa.dokan.Utils.TextViewLight
+                    android:id="@+id/register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="@string/register_now"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+
+                <com.mohaa.dokan.Utils.TextViewLight
+                    android:id="@+id/login_now"
+                    style="@style/txt_color_primary_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/already_account"
+                    android:textAlignment="center" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

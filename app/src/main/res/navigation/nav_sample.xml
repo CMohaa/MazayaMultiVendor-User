@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/defaultFragment">
+
+    <fragment
+        android:id="@+id/orders_fragment"
+        android:name="com.mohaa.dokan.Controllers.fragments_home.OrdersFragment"
+        android:label="My Orders"
+        tools:layout="@layout/fragment_orders" />
+    <fragment
+        android:id="@+id/settings_fragment"
+        android:name="com.mohaa.dokan.Controllers.fragments_home.SettingsFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/defaultFragment"
+        android:name="com.mohaa.dokan.Controllers.fragments_home.HomeFragment"
+        android:label="@string/app_title"
+        tools:layout="@layout/fragment_home" >
+    </fragment>
+
+</navigation>

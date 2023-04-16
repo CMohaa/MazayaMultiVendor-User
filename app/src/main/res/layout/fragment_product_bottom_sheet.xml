@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:id="@+id/frame_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/llMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="0.99"
+
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.3">
+
+                        <ImageView
+                            android:id="@+id/ivImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerInside" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="0.6"
+                        android:gravity="start|center"
+                        android:orientation="vertical">
+
+                        <com.mohaa.dokan.Utils.TextViewRegular
+                            android:id="@+id/tvName"
+                            style="@style/txt_gray_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="3dp"
+                            android:layout_marginRight="3dp"
+                            android:gravity="start|center">
+
+                            <com.mohaa.dokan.Utils.ratingbar.MaterialRatingBar
+                                android:id="@+id/ratingBar"
+                                style="@style/Widget.MaterialRatingBar.RatingBar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:isIndicator="true"
+                                android:rating="0"
+                                android:stepSize="0.5"
+                                app:mrb_fillBackgroundStars="true"
+                                app:mrb_progressBackgroundTint="@color/star_color"
+                                app:mrb_progressTint="@color/yello" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:gravity="start"
+                            android:orientation="horizontal">
+
+                            <com.mohaa.dokan.Utils.TextViewRegular
+                                android:id="@+id/tvPrice"
+                                style="@style/txt_color_primary_medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="" />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="3dp"
+                            android:gravity="start"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/tvAvailibilitytext"
+                                style="@style/txt_gray_micro"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginEnd="1dp"
+                                android:text="@string/availability"
+
+                                />
+                            <com.mohaa.dokan.Utils.TextViewLight
+                                android:id="@+id/txtStockQuantity"
+                                style="@style/txt_gray_micro"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginEnd="1dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text=""
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_controller"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/cart_round_button"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <ImageView
+                            android:id="@+id/tvIncrement"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_plus_sign" />
+
+                        <com.mohaa.dokan.Utils.TextViewBold
+                            android:id="@+id/tvQuantity"
+                            style="@style/txt_black_medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:text="1"
+                            android:textColor="@color/colorPrimary" />
+
+                        <ImageView
+                            android:id="@+id/tvDecrement"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_minus_sign" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/ivDelete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="3dp"
+                            app:srcCompat="@drawable/ic_remove" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.mohaa.dokan.Utils.TextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_table" />
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_below="@+id/frame_product"
+            android:id="@+id/sizeParentLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/defaultMargin"
+                android:layout_marginRight="@dimen/defaultMargin"
+                android:layout_marginTop="@dimen/defaultMargin"
+                android:text="@string/size"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <org.apmem.tools.layouts.FlowLayout
+                android:id="@+id/sizesLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/defaultMargin" />
+
+            <include layout="@layout/border" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_below="@+id/sizeParentLay"
+            android:id="@+id/colorParentLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/defaultMargin"
+                android:layout_marginRight="@dimen/defaultMargin"
+                android:layout_marginTop="@dimen/defaultMargin"
+                android:text="@string/color"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <org.apmem.tools.layouts.FlowLayout
+                android:id="@+id/colorsLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/defaultMargin" />
+
+            <include layout="@layout/border" />
+        </LinearLayout>
+        <Button
+            android:layout_below="@+id/colorParentLay"
+            android:id="@+id/btn_checkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:text="@string/btn_Proceed" />
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
